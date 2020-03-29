@@ -6,7 +6,7 @@
   "author": "dagdun <dagdun@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "node_modules/nodemon/bin/nodemon.js server.js",
     "test": "jest --testTimeout=10000 --watch"
   },
   "dependencies": {
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
     "supertest": "^4.0.2"
   }
 }
