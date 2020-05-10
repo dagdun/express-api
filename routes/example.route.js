@@ -22,9 +22,9 @@ app
   .get('/:id', getId)
 
   // post
-  .post('/:to', postId)
+  .post('/:id', postId)
 
   // get
-  .delete('/:xyz', deleteId)
+  .delete('/:id', deleteId)
 
 module.exports = app
