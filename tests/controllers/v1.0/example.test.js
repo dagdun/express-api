@@ -115,6 +115,5 @@ describe('example unittest', () => {
     const { body: body1 } = await request(server).get('/v1.0/example')
     expect(body1.data.length).toEqual(1)
     expect(body1.data[0].name).toEqual('eee')
-
   })
 })
