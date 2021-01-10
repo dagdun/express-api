@@ -6,7 +6,7 @@
   "author": "dagdun <dagdun@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "node_modules/nodemon/bin/nodemon.js server.js",
+    "dev": "./node_modules/typescript/bin/tsc --allowJs --outDir ./dist && node_modules/nodemon/bin/nodemon.js ./dist/server.js",
     "test": "jest --testTimeout=10000 --watch"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
     "jest": "^25.1.0",
     "mongodb-memory-server": "^6.5.2",
     "nodemon": "^2.0.2",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "typescript": "^4.1.3"
   }
 }
